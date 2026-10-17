@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "nom": "koa-recette-ancien",
+  "base": "ubuntu-24.04",
+  "socle": "dev",
+  "sudo": true,
+  "utilisateur": "agent",
+  // Le socle dev porte déjà Node, npm, Docker, gh : seul curl en plus, pour vérifier le HTTP 200 du conteneur.
+  "paquets": ["curl"],
+  "bootstrap": "bootstrap.sh",
+  "repertoire": "~/projet",
+}
